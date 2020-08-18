@@ -4,9 +4,9 @@ import BasketProducts from './BasketProducts'
 
 function Basket({ basketProducts, onDelete }) {
   return (
-    <ul className="products-container">
-    {basketProducts === [] ? <EmptyBasket /> : <BasketProducts basketProducts={basketProducts} onDelete={onDelete} />}
-    </ul>
+    <div>
+      {basketProducts === [] ? <EmptyBasket /> : <BasketProducts basketProducts={basketProducts} onDelete={onDelete} />}
+    </div>
   )
 }
 

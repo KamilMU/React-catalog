@@ -5,12 +5,10 @@ import SearchedItemList from './SearchedItemList'
 function ProductsList({ sortedItemsById, searchedItems, searched, addPriceInBasket, addProductToBasket }) {
   return (
     <>
-      <ul className="products-container">
-        {searched ?
-          <SearchedItemList searchedItems={searchedItems} addPriceInBasket={addPriceInBasket} addProductToBasket={addProductToBasket} /> :
-          <SortedItemListById sortedItemsById={sortedItemsById} addPriceInBasket={addPriceInBasket} addProductToBasket={addProductToBasket} />
-        }
-      </ul>
+      {searched ?
+        <SearchedItemList searchedItems={searchedItems} addPriceInBasket={addPriceInBasket} addProductToBasket={addProductToBasket} /> :
+        <SortedItemListById sortedItemsById={sortedItemsById} addPriceInBasket={addPriceInBasket} addProductToBasket={addProductToBasket} />
+      }
     </>
   )
 }

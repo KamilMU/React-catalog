@@ -133,8 +133,8 @@ class App extends React.Component {
     console.log(this.state.basketProducts)
     this.state.products.map(item => {
       if (item.id === productId) {
-        return this.setState({ 
-          basketProducts: [...this.state.basketProducts, {...item, id: Date.now() }] 
+        return this.setState({
+          basketProducts: [...this.state.basketProducts, { ...item, id: Date.now() }]
         })
       }
     })
