@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+  align-items: center;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #282c34;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+}
+
+.header-container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__link {
+  color: #61dafb;
+}
+
+.header__basket {
+  display: flex;
+  flex-direction: column;
+}
+.basket__subtittle {
+  font-size: 15px;
+}
+.header__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 20px 30px;
+}
+
+.header__list li {
+  margin: 0 13px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.header__link:hover,  
+.header__basket:hover,
+.searchbar-list__item:hover {
+  color: orange;
+}
+
+.header__basket {
+  cursor: pointer;
+}
+
+/* Searchbar */
+
+.searchbar-list {
+  list-style: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.searchbar-list__item {
+  font-size: 18px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* CONTENT */
+
+.content {
+  width: 100%;
+}
+
+.content-inner {
+  display: flex;
+}
+
+.content-column {
+  padding-top: 40px;
+}
+
+.content-column-inner {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 10px 10px;
+}
+
+.content-form {
+
+}
+
+.content-form input {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.products-container {
+  color: black;
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px 0;
+  padding-top: 70px;
+}
+
+.products-container__item {
+  display: flex;
+}
+
+.products-container__item +  .products-container__item {
+  margin-top: 30px;
+}
+
+.products-container-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.products-container__item-name {
+  font-size: 38px;
+}
+
+.products-container__item-img {
+  width: 30%;
+}
+
+.products-container__item-img img{
+  max-width: 100%;
+}
+
+.products-container__item-btn {
+  cursor: pointer;
+  border: 0;
+  font-weight: bold;
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
+  padding: 20px 50px;
+}
+
